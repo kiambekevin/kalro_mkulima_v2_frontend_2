@@ -8,7 +8,7 @@ import CourseEmpty from '../components/courses/CourseEmpty';
 import Pagination from '../components/courses/Pagination';
 import { useCourses } from '../hooks/useCourses';
 import { pathwaysService } from '../api/services/courses';
-
+ 
 export default function CoursesPage() {
   const {
     state,
