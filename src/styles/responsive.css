@@ -1,0 +1,117 @@
+@media (max-width: 1340px) {
+  .header__actions .hide-lg { display: none; }
+}
+
+@media (max-width: 1100px) {
+  .nav__trigger, .nav__link { padding: 10px 10px; font-size: 15px; }
+  .courses, .pathways { grid-template-columns: repeat(2, 1fr); }
+  .subjects { grid-template-columns: repeat(2, 1fr); }
+  .offline { grid-template-columns: 1fr 1fr; }
+  .offline .stores { flex-direction: row; grid-column: 1 / -1; }
+  .hero__inner { grid-template-columns: 1fr; gap: 48px; padding: 80px 0 64px; }
+  .hero__panel { max-width: 560px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stats div:nth-child(2) { border-right: 0; }
+  .stats div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+}
+
+@media (max-width: 1023px) {
+  :root { --header-h: 64px; }
+
+  .menu-btn { display: inline-grid; }
+  .header__nav-actions .hide-md { display: none; }
+  .mobile-only { display: block; }
+  .header__nav-row { height: 52px; }
+  .header__nav-row .nav { display: none; }
+  .header__nav-actions { display: flex; width: 100%; justify-content: flex-end; }
+
+  .nav {
+    position: fixed; inset: var(--nav-top, 0px) 0 0 0;
+    background: #fff; overflow-y: auto;
+    display: none;
+    padding: 12px 24px 40px;
+    border-top: 1px solid var(--line);
+    z-index: 60;
+  }
+  .nav.is-open { display: block; }
+  .nav__list { flex-direction: column; align-items: stretch; gap: 0; }
+  .nav__list > li { border-bottom: 1px solid var(--line); }
+  .nav__trigger, .nav__link {
+    width: 100%; justify-content: space-between;
+    padding: 18px 6px; font-size: 17px;
+    border-radius: 0;
+    background: none !important;
+    box-shadow: none !important;
+  }
+  .mega { position: static; box-shadow: none; border: 0; background: transparent; }
+  .mega.is-open { animation: none; }
+  .mega__inner, .mega__inner--2 {
+    grid-template-columns: 1fr; gap: 22px;
+    padding: 0 0 22px;
+  }
+  .mega__cols { grid-template-columns: 1fr; }
+  .mega__links small { display: none; }
+  .mega__links a { margin: 0; padding: 12px 8px; }
+  .mega__feature { padding: 22px; }
+
+  .badges__grid, .faq-grid { grid-template-columns: 1fr; gap: 44px; }
+  .badges { padding: 72px 0; }
+  .shelf { max-width: 500px; margin: 0 auto; }
+  .voices { grid-template-columns: 1fr; }
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .steps { grid-template-columns: 1fr 1fr; gap: 40px 0; }
+  .step:nth-child(2)::before { display: none; }
+}
+
+@media (max-width: 640px) {
+  :root { --header-h: 60px; }
+  body { font-size: 16px; }
+  .section { padding: 64px 0; }
+  .wrap { padding: 0 18px; }
+  .utility__right .contact { display: none; }
+  .utility__news .more { display: none; }
+  .logo__sub { display: none; }
+  .header__actions .btn--primary span { display: none; }
+  .header__actions .btn--primary { padding: 10px 13px; }
+  .header__nav-actions .btn span { display: none; }
+  .header__nav-actions .btn { padding: 9px 13px; }
+  .header__nav-row { height: 50px; }
+
+  .hero__inner { padding: 64px 0 56px; gap: 36px; }
+  .hero__lead { font-size: 17px; }
+  .search {
+    flex-wrap: wrap;
+    border-radius: var(--radius);
+    padding: 10px 10px 10px 18px;
+  }
+  .search .btn { width: 100%; }
+  .hero__panel { padding: 20px; }
+  .hero__panel-stats { grid-template-columns: 1fr 1fr; }
+
+  .stats { grid-template-columns: 1fr; }
+  .stats div { border-right: 0; border-bottom: 1px solid var(--line); }
+  .stats div:last-child { border-bottom: 0; }
+  .stats b { font-size: 26px; }
+
+  .subjects, .courses, .pathways { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; gap: 36px; }
+  .step::before { display: none; }
+  .offline { grid-template-columns: 1fr; padding: 28px; gap: 24px; }
+  .offline .stores { flex-direction: column; }
+  .rosette--lg { width: 110px; font-size: 110px; }
+  .shelf__item:nth-child(2) { transform: translateY(-22px); }
+  .shelf__card { flex-wrap: wrap; }
+  .shelf__card .ok { margin-left: 0; }
+  .cta__box { padding: 32px 24px; }
+  .cta__box::before { display: none; }
+  .footer__grid { grid-template-columns: 1fr; gap: 28px; }
+  .voice { padding: 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

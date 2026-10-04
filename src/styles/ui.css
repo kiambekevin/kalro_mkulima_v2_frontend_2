@@ -1,0 +1,119 @@
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-weight: 700; font-size: 15.5px; text-decoration: none;
+  border: 2px solid transparent;
+  padding: 11px 22px; border-radius: 999px; cursor: pointer;
+  transition: background .18s, color .18s, border-color .18s,
+              transform .12s, box-shadow .18s;
+  white-space: nowrap; letter-spacing: .01em;
+}
+.btn:active { transform: translateY(1px); }
+
+.btn--primary {
+  background: var(--leaf); color: #fff;
+  box-shadow: 0 6px 14px -8px rgba(35,128,74,.6);
+}
+.btn--primary:hover {
+  background: var(--leaf-600);
+  box-shadow: 0 10px 20px -10px rgba(35,128,74,.7);
+}
+.btn--ghost {
+  color: var(--forest); border-color: var(--line-strong); background: #fff;
+}
+.btn--ghost:hover {
+  border-color: var(--leaf); color: var(--leaf-600); background: var(--leaf-50);
+}
+.btn--ghost-light {
+  color: #fff; border-color: rgba(255,255,255,.5); background: transparent;
+}
+.btn--ghost-light:hover { border-color: #fff; background: rgba(255,255,255,.12); }
+.btn--maize {
+  background: var(--maize); color: var(--forest);
+  box-shadow: 0 6px 14px -8px rgba(240,180,41,.7);
+}
+.btn--maize:hover { background: var(--maize-dark); }
+.btn--sm { padding: 8px 15px; font-size: 14.5px; }
+.btn--lg { padding: 14px 30px; font-size: 16.5px; }
+
+/* =========================================================
+   ROSETTE (SVG BADGE)
+   ========================================================= */
+.rosette {
+  position: relative; display: inline-block;
+  width: 64px; flex: none; font-size: 64px;
+}
+.rosette svg {
+  width: 100%; height: auto; display: block; overflow: visible;
+}
+.rosette i {
+  position: absolute; left: 50%; top: 37.5%;
+  transform: translate(-50%, -50%);
+  color: #fff; font-size: 0.34em;
+}
+.rosette--lg { width: 156px; font-size: 156px; }
+.rosette--md { width: 110px; font-size: 110px; }
+.rosette--sm { width: 44px;  font-size: 44px; }
+
+.r-course  { --r1: #23804A; --r2: #123B26; --rt: #2F9A5A; }
+.r-pathway { --r1: #F0B429; --r2: #B7801A; --rt: #F0B429; }
+.r-trainer { --r1: #8B5A36; --r2: #5E3A20; --rt: #A87248; }
+
+/* =========================================================
+   VERIFY FORMS
+   ========================================================= */
+.verify-mini { display: flex; gap: 7px; width: 100%; }
+.verify-mini input {
+  flex: 1; min-width: 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 10px 16px;
+  font: inherit; font-size: 14.5px; background: #fff;
+}
+
+.verify {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: var(--radius);
+  padding: 22px;
+  backdrop-filter: blur(6px);
+}
+.verify label {
+  font-weight: 700; display: block;
+  margin-bottom: 12px; font-size: 15.5px;
+}
+.verify__row { display: flex; gap: 9px; }
+.verify input {
+  flex: 1; min-width: 0;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.22);
+  background: rgba(0,0,0,.18);
+  color: #fff;
+  padding: 12px 18px;
+  font: inherit; font-size: 15.5px;
+}
+.verify input::placeholder { color: #8FAD9B; }
+.verify input:focus {
+  outline: none;
+  border-color: var(--maize);
+  background: rgba(0,0,0,.28);
+}
+.verify__result {
+  margin-top: 12px; font-size: 14px;
+  color: #B9D2C1; min-height: 1.4em;
+}
+
+/* =========================================================
+   BADGE PILL (used in CourseCard foot)
+   ========================================================= */
+.badge-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 800;
+  color: var(--forest);
+  background: var(--maize-50);
+  padding: 5px 12px; border-radius: 999px;
+  border: 1px solid rgba(240,180,41,.35);
+}
+.badge-pill i { color: var(--maize-dark); }

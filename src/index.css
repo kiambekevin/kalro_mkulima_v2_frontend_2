@@ -1,0 +1,16 @@
+@import './styles/tokens.css';
+@import './styles/base.css';
+@import './styles/utilities.css';
+@import './styles/layout.css';
+@import './styles/ui.css';
+@import './styles/sections.css';
+@import './styles/pages.css';
+@import './styles/course-detail.css';
+@import './styles/lesson.css';        
+@import './styles/responsive.css';
+@import './styles/badges.css';
+@import './styles/auth.css';
+@import './styles/dashboard.css';
+@import './styles/about.css';
+@import './styles/call-centre.css';
+@import './styles/legal.css';
